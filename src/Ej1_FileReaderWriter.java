@@ -27,8 +27,10 @@ public class Ej1_FileReaderWriter {
 
 		// try-with-resources: el lector y el escritor se cierran solos al terminar,
 		// tanto si todo va bien como si salta una excepcion
-		try (FileReader lector = new FileReader(entrada);
-			 FileWriter escritor = new FileWriter(salida)) {
+		try (
+				FileReader lector = new FileReader(entrada);
+				FileWriter escritor = new FileWriter(salida)
+			) {
 
 			int c;
 			// read() devuelve el caracter leido como int, o -1 al llegar al fin de fichero
